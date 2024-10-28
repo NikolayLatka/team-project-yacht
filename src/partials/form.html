@@ -1,0 +1,53 @@
+<section class="form">
+  <div class="container form--flex">
+    <h2 class="form__title">Rent a yacht now</h2>
+    <img class="form__img" src="#" alt="#" />
+    <form>
+      <label class="form__label form__label-name">
+        <span class="form__span">Full Name</span>
+        <input
+          class="form__input form__input-name"
+          type="text"
+          required
+          minlength="6"
+          maxlength="20"
+          pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+          title="User should has full name. Only on english language."
+        />
+      </label>
+      <label class="form__label form__label-email">
+        <span class="form__span">Email</span>
+        <input
+          class="form__input form__input-email"
+          type="email"
+          required
+          minlength="4"
+          maxlength="10"
+          title="Your email wrote uncorrectly! Example:example@mail.com"
+        />
+      </label>
+      <label class="form__label form__label-number">
+        <span class="form__span">Phone number</span>
+        <input
+          class="form__input form__input-number"
+          type="text"
+          required
+          minlength="13"
+          maxlength="13"
+          title="Your number wrote uncorrectly! Приклад:+380000000000"
+        />
+      </label>
+      <label class="form__label form__label-comment">
+        <span class="form__span">Comment</span>
+        <input
+          class="form__input form__input-comment"
+          id="comment"
+          type="text"
+          maxlength="500"
+          placeholder="Write text"
+        />
+      </label>
+      <button class="form__btn" type="submit">Send</button>
+    </form>
+  </div>
+</section>
