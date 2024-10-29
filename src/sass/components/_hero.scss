@@ -1,0 +1,203 @@
+.hero {
+    margin: 0 auto;
+    height: 880px;
+    background-color: #11131f;
+    background-image: url(../images/ellipses/ellipse-hero-tiny.png);
+    background-position: right 250px bottom 208px;
+    background-repeat: no-repeat;
+    background-size: 279px 279px;
+
+
+    @media screen and(min-width:$tablet) {
+        background-color: #11131f;
+            background-image: url(../images/ellipses/ellipse-hero-side.png);
+            background-position: right 500px bottom 200px;
+            background-size: 414px 414px;
+    }
+
+
+
+
+
+}
+
+
+
+
+
+
+
+.hero-title {
+    width: 332px;
+    font-family: DM Sans;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 110%;
+    letter-spacing: -4.5%;
+    text-align: left;
+    margin-bottom: 14px;
+    margin-top: 40px;
+
+    @media screen and(min-width: $tablet) {
+        width: 700px;
+        font-family: DM Sans;
+            font-size: 60px;
+            font-weight: 500;
+            line-height: 110%;
+            letter-spacing: -4.5%;
+            text-align: left;
+display: flex;
+flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    }
+
+}
+
+
+.hero-title-part {
+    font-style: normal;
+    color: #ffffff;
+}
+
+.hero-title-strong {
+    margin-left: 7px;
+    font-family: DM Sans;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 110%;
+    letter-spacing: -4.5%;
+    text-align: left;
+    color: rgb(161, 181, 186);
+
+    @media screen and(min-width: $tablet) {
+        font-family: DM Sans;
+            font-size: 60px;
+            font-weight: 500;
+            line-height: 110%;
+            letter-spacing: -4.5%;
+            text-align: left;
+            font-style: italic;
+            margin: 0px;
+            
+            
+    }
+
+}
+
+.hero-text {
+    margin-bottom: 24px;
+
+    @media screen and(min-width: $tablet) {
+        width: 509px;
+    }
+
+}
+
+.hero-btn-grey {
+    width: 130px;
+    height: 43px;
+    border-radius: 60px;
+    background-color: rgb(147, 171, 174);
+    color: rgb(246, 245, 239);
+    transition: background-color 600ms ease-in-out;
+}
+
+.hero-btn-grey:hover {
+    background-color: rgb(136, 179, 185);;
+}
+
+.hero-btn-black {
+    width: 104px;
+    height: 43px;
+    background-color: rgb(17, 19, 31);
+    color: rgb(246, 245, 239);
+    border: 1px solid rgb(246, 245, 239);
+    border-radius: 60px;
+}
+
+.hero-btn-black:hover {
+    color: rgb(147, 171, 174);
+    border-color: rgb(147, 171, 174);
+}
+
+.hero-img {
+    z-index: 1;
+    margin-top: 40px;
+    position: relative;
+    
+
+    
+
+}
+
+.hero-clients {
+    top: 0;
+    position: absolute;
+    margin: 15px 15px;
+}
+
+.hero-clients-text {
+    top: 65px;
+    margin: 15px 15px;
+    position: absolute;
+    color: rgb(17, 19, 31);
+        font-family: DM Sans;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 110%;
+        letter-spacing: 4%;
+        text-align: left;
+}
+
+
+.hero-man {
+    position: absolute;
+    left: 210px;
+    top: 30px;
+
+
+    @media screen and(min-width: $tablet) {
+        left: 270px;
+        width: 153px;
+        height: 153px;
+            top: 30px;
+            border-radius: 24px;
+    }
+}
+
+
+.hero-yacht {
+    position: absolute;
+    left: 20px;
+    top: 160px;
+    
+}
+
+.hero-price {
+    position: absolute;
+    bottom: 20px;
+    color: rgb(17, 19, 31);
+        font-family: DM Sans;
+        font-size: 48px;
+        font-weight: 400;
+        line-height: 110%;
+        letter-spacing: -4.5%;
+        text-align: left;
+        margin: 15px 15px;
+}
+
+
+.hero-mask-text {
+    position: absolute;
+    bottom: 42px;
+    left: 135px;
+    width: 180px;
+    color: rgb(17, 19, 31);
+        font-family: DM Sans;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 140%;
+        letter-spacing: -4.5%;
+        text-align: left;
+}

@@ -1,0 +1,184 @@
+.yachts {
+    background-color: #11131f;
+}
+
+
+
+.yachts-list-item {
+    margin-top: 80px;
+    font-family: DM Sans;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 118%;
+        letter-spacing: 3%;
+color: rgb(246, 245, 239);
+padding-top: 18px;
+padding-right: 18px;
+padding-left: 18px;
+    display: flex;
+    border-radius: 24px;
+    flex-direction: column;
+    text-align: left;
+    width: 335px;
+    height: 469px;
+    background-color: rgb(31, 33, 45);
+    border: 1px solid rgb(31, 33, 45);
+    margin-bottom: 104px;
+    padding-bottom: 24px;
+
+    @media screen and(min-width: $tablet) {
+        width: 335px;
+        
+    }
+
+
+
+}
+
+
+
+
+
+
+.yachts-row {
+    display: flex;
+    flex-direction: row;
+    margin-top: 6px;
+}
+
+
+
+
+.slick-prev {
+    position: absolute;
+    bottom: 45px;
+    left: 110px;
+    width: 46px;
+    height: 36px;
+    z-index: 1;
+    border-radius: 60px;
+    background-color: #11131f;
+    color: #11131f;
+}
+
+.slick-next {
+    position: relative;
+    position: absolute;
+    bottom: 45px;
+    right: 110px;
+    width: 46px;
+    height: 36px;
+    z-index: 1;
+    border-radius: 60px;
+    background-color: #11131f;
+    color: #11131f;
+}
+
+
+
+
+.slick-prev::before {
+    position: absolute;
+    content: "⭠";
+    display: block;
+    width: 46px;
+    height: 36px;
+    background-color: #11131f;
+    color: rgb(246, 245, 239);
+    padding-top: 9px;
+    border-radius: 60px;
+    border: 1px solid rgb(246, 245, 239);
+    top: 0;
+    left: 0;
+
+    @media screen and(min-width: $tablet) {
+        top: 0;
+            left: 185px;
+        
+    }
+
+
+
+}
+
+
+.slick-next::before {
+    position: absolute;
+    content: "⭢";
+    display: block;
+    width: 46px;
+    height: 36px;
+    background-color: #11131f;
+    color: rgb(246, 245, 239);
+    padding-top: 9px;
+    border-radius: 60px;
+    border: 1px solid rgb(246, 245, 239);
+    top: 0;
+    left: 0;
+
+    @media screen and(min-width: $tablet) {
+        top: 0;
+        left: -185px;
+        
+    }
+
+
+}
+
+
+
+.yachts-title {
+    margin-right: 20px;
+    
+}
+
+.yachts-main {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-bottom: 24px;
+    margin-top: 10px;
+}
+
+.yachts-main>.yachts-category {
+    color: rgb(246, 245, 239);
+    opacity: 0.5;
+}
+
+.yachts-main>.yachts-title {
+    font-family: DM Sans;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 120%;
+        letter-spacing: -4.5%;
+}
+
+
+
+.yachts-size {
+    margin-left: 34px;
+}
+
+.yachts-builder {
+    margin-left: 23px;
+}
+
+.yachts-built {
+    margin-left: 53px;
+}
+
+.yachts-guests {
+    margin-left: 36px;
+}
+
+.yachts-price {
+    margin-left: 50px;
+}
+
+.admiral {
+    margin-left: 31px;
+}
+
+.sanlorenzo {
+    margin-left: 31px;
+}
