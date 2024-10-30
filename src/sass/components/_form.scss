@@ -1,0 +1,92 @@
+.form {
+  background-image: url(../images/ellipses/ellipse-form.png);
+  background-size: 600px;
+  background-repeat: no-repeat;
+  background-position: 80px 270px;
+
+  margin: 0 auto;
+
+  width: $mobile;
+  height: 676px;
+
+  background-color: $brown;
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  &__title {
+    width: 271px;
+    height: 40px;
+
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 110%;
+
+    margin-bottom: 16px;
+  }
+
+  &__img {
+    margin-bottom: 40px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  &__label {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__span {
+    font-weight: 500;
+    line-height: 120%;
+  }
+
+  &__input {
+    height: 16px;
+
+    color: $main-color;
+
+    background: transparent;
+
+    border: none;
+    border-bottom: 1px solid $main-color;
+
+    &-comment {
+      height: 58px;
+    }
+  }
+
+  &__btn {
+    width: 123px;
+    height: 43px;
+
+    box-sizing: border-box;
+    border: 1px solid rgb(246, 245, 239);
+    border-radius: 60px;
+
+    background: transparent;
+
+    color: rgb(246, 245, 239);
+    font-weight: 700;
+    line-height: 110%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 28px;
+  }
+
+  &__btn-svg {
+    width: 19px;
+    height: 28px;
+
+    transform: rotate(90deg);
+
+    margin-left: 16px;
+  }
+}
