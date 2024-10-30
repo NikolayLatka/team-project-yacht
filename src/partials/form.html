@@ -1,8 +1,13 @@
 <section class="form">
   <div class="container form--flex">
     <h2 class="form__title">Rent a yacht now</h2>
-    <img class="form__img" src="#" alt="#" />
-    <form>
+    <img
+      class="form__img"
+      src="./images/small-boat.png"
+      srcset="./images/small-boat.png 1x, ./images/small-boat@2x.png 2x"
+      alt="Small boat in the lake"
+    />
+    <form class="form__form">
       <label class="form__label form__label-name">
         <span class="form__span">Full Name</span>
         <input
@@ -22,7 +27,8 @@
           type="email"
           required
           minlength="4"
-          maxlength="10"
+          maxlength="20"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
           title="Your email wrote uncorrectly! Example:example@mail.com"
         />
       </label>
@@ -34,6 +40,7 @@
           required
           minlength="13"
           maxlength="13"
+          pattern="\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}"
           title="Your number wrote uncorrectly! Приклад:+380000000000"
         />
       </label>
@@ -44,10 +51,14 @@
           id="comment"
           type="text"
           maxlength="500"
-          placeholder="Write text"
         />
       </label>
-      <button class="form__btn" type="submit">Send</button>
+      <button class="form__btn" type="submit" data-modal-open>
+        Send
+        <svg class="form__btn-svg">
+          <use href="./images/sprite.svg#arrow"></use>
+        </svg>
+      </button>
     </form>
   </div>
 </section>
