@@ -1,6 +1,8 @@
 .hero {
     width: 375px;
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
     height: 880px;
     background-color: #11131f;
     background-image: url(../images/ellipses/ellipse-hero-tiny.png);

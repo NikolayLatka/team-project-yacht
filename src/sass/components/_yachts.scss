@@ -1,9 +1,15 @@
 .yachts {
+    width: 375px;
+    margin: 0 auto;
     position: relative;
     height: 530px;
     background-color: #11131f;
-    background-size: 335px;
+    display: flex;
+    justify-content: center;
 
+    @media screen and(min-width: $tablet) {
+        width: 704px;
+    }
 
 
 }
