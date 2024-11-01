@@ -1,4 +1,5 @@
 .hero {
+    width: 375px;
     margin: 0 auto;
     height: 880px;
     background-color: #11131f;
@@ -9,6 +10,8 @@
 
 
     @media screen and(min-width:$tablet) {
+        width: 768px;
+        height: 1107px;
         background-color: #11131f;
             background-image: url(../images/ellipses/ellipse-hero-side.png);
             background-position: right 500px bottom 200px;
@@ -16,6 +19,11 @@
     }
 
 
+    @media screen and(min-width: $desktop) {
+        width: 1280px;
+        margin: 0 auto;
+    }
+
 
 
 
@@ -23,37 +31,57 @@
 
 
 
-
+.hero-flex {
+    @media screen and(min-width: $desktop) {
+            display: flex;
+            align-items: center;
+flex-direction: row-reverse;
+justify-content: space-between;
+        }
+}
 
 
 
 .hero-title {
     width: 332px;
-    font-family: DM Sans;
     font-size: 36px;
     font-weight: 500;
-    line-height: 110%;
-    letter-spacing: -4.5%;
+    line-height: 40px;
     text-align: left;
     margin-bottom: 14px;
     margin-top: 40px;
 
     @media screen and(min-width: $tablet) {
         width: 700px;
-        font-family: DM Sans;
             font-size: 60px;
             font-weight: 500;
             line-height: 110%;
-            letter-spacing: -4.5%;
             text-align: left;
 display: flex;
-flex-direction: column;
+
     justify-content: flex-start;
     align-items: flex-start;
+    flex-direction: column;
     }
+
+
+    @media screen and(min-width: $desktop) {
+        margin-left: 7px;
+            font-size: 36px;
+            font-weight: 500;
+            text-align: left;
+    }
+
 
 }
 
+
+
+.main-holder {
+    @media screen and(min-width: $desktop) {
+        margin-left: 40px;
+    }
+}
 
 .hero-title-part {
     font-style: normal;
@@ -62,26 +90,28 @@ flex-direction: column;
 
 .hero-title-strong {
     margin-left: 7px;
-    font-family: DM Sans;
     font-size: 36px;
     font-weight: 500;
-    line-height: 110%;
-    letter-spacing: -4.5%;
     text-align: left;
     color: rgb(161, 181, 186);
 
     @media screen and(min-width: $tablet) {
-        font-family: DM Sans;
             font-size: 60px;
             font-weight: 500;
-            line-height: 110%;
-            letter-spacing: -4.5%;
             text-align: left;
             font-style: italic;
             margin: 0px;
             
             
     }
+
+    @media screen and(min-width: $desktop) {
+            font-size: 36px;
+            font-weight: 500;
+            text-align: left;
+            
+    }
+
 
 }
 
@@ -112,7 +142,7 @@ flex-direction: column;
     height: 43px;
     background-color: rgb(17, 19, 31);
     color: rgb(246, 245, 239);
-    border: 1px solid rgb(246, 245, 239);
+    border: 2px solid rgb(246, 245, 239);
     border-radius: 60px;
 }
 
@@ -131,10 +161,23 @@ flex-direction: column;
 
 }
 
+.hero-mask {
+    @media screen and(min-width: $tablet) {
+        width: 426px;
+            height: 598px;
+    }
+}
+
 .hero-clients {
     top: 0;
     position: absolute;
     margin: 15px 15px;
+
+    @media screen and(min-width: $tablet) {
+        width: 149px;
+        height: 56px;
+    }
+
 }
 
 .hero-clients-text {
@@ -142,12 +185,15 @@ flex-direction: column;
     margin: 15px 15px;
     position: absolute;
     color: rgb(17, 19, 31);
-        font-family: DM Sans;
         font-size: 14px;
         font-weight: 700;
-        line-height: 110%;
-        letter-spacing: 4%;
         text-align: left;
+
+
+        @media screen and(min-width: $tablet) {
+            width: 96px;
+            height: 15px;
+        }
 }
 
 
@@ -158,11 +204,10 @@ flex-direction: column;
 
 
     @media screen and(min-width: $tablet) {
-        left: 270px;
-        width: 153px;
-        height: 153px;
+        left: 350px;
+        width: 233px;
+        height: 233px;
             top: 30px;
-            border-radius: 24px;
     }
 }
 
@@ -172,19 +217,35 @@ flex-direction: column;
     left: 20px;
     top: 160px;
     
+    @media screen and(min-width: $tablet) {
+        left: 20px;
+            top: 240px;
+        width: 378px;
+        height: 221px;
+    }
+
 }
 
 .hero-price {
     position: absolute;
     bottom: 20px;
     color: rgb(17, 19, 31);
-        font-family: DM Sans;
         font-size: 48px;
         font-weight: 400;
         line-height: 110%;
-        letter-spacing: -4.5%;
         text-align: left;
         margin: 15px 15px;
+
+
+        @media screen and(min-width: $tablet) {
+            width: 130px;
+            bottom: 20px;
+            left: 10px;
+            height: 66px;
+                font-size: 60px;
+                font-weight: 400;
+            
+        }
 }
 
 
@@ -194,10 +255,18 @@ flex-direction: column;
     left: 135px;
     width: 180px;
     color: rgb(17, 19, 31);
-        font-family: DM Sans;
         font-size: 14px;
         font-weight: 400;
-        line-height: 140%;
-        letter-spacing: -4.5%;
         text-align: left;
+
+
+    @media screen and(min-width: $tablet) {
+            font-size: 18px;
+            font-weight: 400;
+            width: 258px;
+            height: 36px;
+            bottom: 52px;
+                left: 175px;
+    }
+
 }

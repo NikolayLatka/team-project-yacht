@@ -1,16 +1,20 @@
 .yachts {
+    position: relative;
+    height: 530px;
     background-color: #11131f;
+    background-size: 335px;
+
+
+
 }
 
 
 
 .yachts-list-item {
     margin-top: 80px;
-    font-family: DM Sans;
         font-size: 14px;
         font-weight: 400;
         line-height: 118%;
-        letter-spacing: 3%;
 color: rgb(246, 245, 239);
 padding-top: 18px;
 padding-right: 18px;
@@ -18,7 +22,6 @@ padding-left: 18px;
     display: flex;
     border-radius: 24px;
     flex-direction: column;
-    text-align: left;
     width: 335px;
     height: 469px;
     background-color: rgb(31, 33, 45);
@@ -26,10 +29,6 @@ padding-left: 18px;
     margin-bottom: 104px;
     padding-bottom: 24px;
 
-    @media screen and(min-width: $tablet) {
-        width: 335px;
-        
-    }
 
 
 
@@ -49,88 +48,110 @@ padding-left: 18px;
 
 
 
-.slick-prev {
+.slick-prev, .slick-next {
     position: absolute;
-    bottom: 45px;
-    left: 110px;
+    font-size: 0;
+    bottom: -54px;
     width: 46px;
     height: 36px;
     z-index: 1;
     border-radius: 60px;
     background-color: #11131f;
-    color: #11131f;
+    border: 1px solid #ffffff;
+}
+
+// .slick-next {
+//     position: absolute;
+//     bottom: 45px;
+//     right: 110px;
+//     width: 46px;
+//     height: 36px;
+//     z-index: 1;
+//     border-radius: 60px;
+//     background-color: #11131f;
+//     color: #11131f;
+// }
+
+.slick-prev {
+    left: 115px;
+    @media screen and(min-width: $tablet) {
+        left: 300px;
+    }
 }
 
 .slick-next {
-    position: relative;
-    position: absolute;
-    bottom: 45px;
-    right: 110px;
-    width: 46px;
-    height: 36px;
-    z-index: 1;
-    border-radius: 60px;
-    background-color: #11131f;
-    color: #11131f;
-}
-
-
-
-
-.slick-prev::before {
-    position: absolute;
-    content: "⭠";
-    display: block;
-    width: 46px;
-    height: 36px;
-    background-color: #11131f;
-    color: rgb(246, 245, 239);
-    padding-top: 9px;
-    border-radius: 60px;
-    border: 1px solid rgb(246, 245, 239);
-    top: 0;
-    left: 0;
-
+    right: 115px;
     @media screen and(min-width: $tablet) {
-        top: 0;
-            left: 185px;
-        
+        right: 300px;
     }
-
-
-
 }
 
 
-.slick-next::before {
-    position: absolute;
-    content: "⭢";
-    display: block;
-    width: 46px;
-    height: 36px;
-    background-color: #11131f;
-    color: rgb(246, 245, 239);
-    padding-top: 9px;
-    border-radius: 60px;
-    border: 1px solid rgb(246, 245, 239);
-    top: 0;
-    left: 0;
+.slick-slider .slick-slide {
+    margin: 0 10px;
+}
 
-    @media screen and(min-width: $tablet) {
-        top: 0;
-        left: -185px;
+
+// .slick-prev::before {
+//     position: absolute;
+//     content: "⭠";
+//     display: block;
+//     width: 46px;
+//     height: 36px;
+//     background-color: #11131f;
+//     color: rgb(246, 245, 239);
+//     padding-top: 9px;
+//     border-radius: 60px;
+//     border: 1px solid rgb(246, 245, 239);
+//     top: 0;
+//     left: 0;
+
+//     @media screen and(min-width: $tablet) {
+//         top: 0;
+//             left: 185px;
         
-    }
+//     }
 
 
-}
+//     @media screen and(min-width: $desktop) {
+//         border: 2px solid rgb(246, 245, 239);
+//     }
 
 
 
-.yachts-title {
-    margin-right: 20px;
-    
-}
+// }
+
+
+// .slick-next::before {
+//     position: absolute;
+//     content: "⭢";
+//     display: block;
+//     width: 46px;
+//     height: 36px;
+//     background-color: #11131f;
+//     color: rgb(246, 245, 239);
+//     padding-top: 9px;
+//     border-radius: 60px;
+//     border: 1px solid rgb(246, 245, 239);
+//     top: 0;
+//     left: 0;
+
+//     @media screen and(min-width: $tablet) {
+//         top: 0;
+//         left: -185px;
+        
+//     }
+
+
+//         @media screen and(min-width: $desktop) {
+//             border: 2px solid rgb(246, 245, 239);
+//         }
+
+// }
+
+
+
+
 
 .yachts-main {
     display: flex;
@@ -146,11 +167,8 @@ padding-left: 18px;
 }
 
 .yachts-main>.yachts-title {
-    font-family: DM Sans;
         font-size: 16px;
         font-weight: 700;
-        line-height: 120%;
-        letter-spacing: -4.5%;
 }
 
 
