@@ -8,13 +8,26 @@
     justify-content: center;
 
     @media screen and(min-width: $tablet) {
-        width: 704px;
+        height: 716px;
+        width: 730px;
     }
 
 
+    @media screen and(min-width: $desktop) {
+        background-image: url(../images/lines.png);
+        background-position: top -250px left -50px;
+        background-blend-mode: soft-light;
+        background-size: 1508.57px 1611.22px;
+        width: 1280px;
+        height: 836px;
+
+    }
+
 }
 
-
+.yachts-flex {
+    outline: none;
+}
 
 .yachts-list-item {
     margin-top: 80px;
@@ -36,13 +49,24 @@ padding-left: 18px;
     padding-bottom: 24px;
 
 
-
+    @media screen and(min-width: $desktop) {
+        width: 335px;
+    }
 
 }
 
 
+.yachts-list {
+    @media screen and(min-width: $tablet) {
+        padding-top: 100px;
+    }
 
-
+    @media screen and(min-width: $desktop) {
+        padding-top: 164px;
+            width: 1080px;
+            margin: 0 auto;
+        }
+}
 
 
 .yachts-row {
@@ -79,22 +103,44 @@ padding-left: 18px;
 // }
 
 .slick-prev {
+            background-color: transparent;
+    background-image: url(../images/arrow-icon-prev.svg);
+        background-position: center;
+        background-repeat: no-repeat;
     left: 115px;
     @media screen and(min-width: $tablet) {
         left: 300px;
     }
+
+
+    @media screen and(min-width: $desktop) {
+        left: -50px;
+        top: 370px;
+    }
 }
 
 .slick-next {
+            background-color: transparent;
+    background-image: url(../images/arrow-icon-next.svg);
+    background-position: center;
+    background-repeat: no-repeat;
     right: 115px;
     @media screen and(min-width: $tablet) {
         right: 300px;
     }
+
+    @media screen and(min-width: $desktop) {
+        right: -50px;
+        top: 370px;
+    }
 }
+
 
 
 .slick-slider .slick-slide {
     margin: 0 10px;
+
+    
 }
 
 
