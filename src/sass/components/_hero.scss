@@ -32,13 +32,21 @@
 }
 
 
+.hero-br {
+    @media screen and(min-width: $tablet) {
+        display: none;
+    }
+
+    @media screen and(min-width: $desktop) {
+        display: block;
+    }
+}
 
 .hero-flex {
     @media screen and(min-width: $desktop) {
             display: flex;
             align-items: center;
 flex-direction: row-reverse;
-justify-content: space-between;
         }
 }
 
@@ -68,22 +76,21 @@ display: flex;
 
 
     @media screen and(min-width: $desktop) {
-        margin-left: 7px;
-            font-size: 36px;
-            font-weight: 500;
-            text-align: left;
+        width: 432px;
+                font-size: 60px;
+                font-weight: 500;
+                display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+
+            
     }
 
 
 }
 
 
-
-.main-holder {
-    @media screen and(min-width: $desktop) {
-        margin-left: 40px;
-    }
-}
 
 .hero-title-part {
     font-style: normal;
@@ -108,9 +115,9 @@ display: flex;
     }
 
     @media screen and(min-width: $desktop) {
-            font-size: 36px;
-            font-weight: 500;
             text-align: left;
+            font-size: 60px;
+                font-weight: 500;
             
     }
 
@@ -161,6 +168,14 @@ display: flex;
 
     
 
+    
+
+}
+
+.main-holder {
+    @media screen and(min-width: $desktop) {
+            margin-left: 250px;
+        }
 }
 
 .hero-mask {
@@ -206,13 +221,20 @@ display: flex;
 
 
     @media screen and(min-width: $tablet) {
-        left: 350px;
-        width: 233px;
-        height: 233px;
-            top: 30px;
+        display: none;
     }
 }
 
+
+.hero-man-tab {
+    display: none;
+    @media screen and(min-width: $tablet) {
+        display: block;
+        position: absolute;
+        left: 350px;
+        top: 30px;
+    }
+}
 
 .hero-yacht {
     position: absolute;
