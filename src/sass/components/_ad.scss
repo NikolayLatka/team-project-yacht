@@ -1,6 +1,30 @@
 .ad {
+  width: 375px;
+  margin: 0 auto;
   background-color: #11131f;
 }
 .ad__text {
+  width: 335px;
   font-family: DM Sans;
+  font-weight: 500;
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+.ad__text--light {
+  color: rgb(190, 199, 194);
+}
+.ad__text--wrapp {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 40px;
+}
+.ad__text__second {
+  width: 160px;
+}
+.ad__item {
+  height: 524px;
+  width: 335px;
+}
+.ad__img {
+  height: 100%;
 }
