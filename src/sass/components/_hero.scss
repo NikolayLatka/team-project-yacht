@@ -1,0 +1,296 @@
+.hero {
+    width: 375px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    height: 880px;
+    background-color: #11131f;
+    background-image: url(../images/ellipses/ellipse-hero-tiny.png);
+    background-position: right 250px bottom 208px;
+    background-repeat: no-repeat;
+    background-size: 279px 279px;
+
+
+    @media screen and(min-width:$tablet) {
+        width: 768px;
+        height: 1107px;
+        background-color: #11131f;
+            background-image: url(../images/ellipses/ellipse-hero-side.png);
+            background-position: right 500px bottom 200px;
+            background-size: 414px 414px;
+    }
+
+
+    @media screen and(min-width: $desktop) {
+        width: 1280px;
+        margin: 0 auto;
+    }
+
+
+
+
+}
+
+
+.hero-br {
+    @media screen and(min-width: $tablet) {
+        display: none;
+    }
+
+    @media screen and(min-width: $desktop) {
+        display: block;
+    }
+}
+
+.hero-flex {
+    @media screen and(min-width: $desktop) {
+            display: flex;
+            align-items: center;
+flex-direction: row-reverse;
+        }
+}
+
+
+
+.hero-title {
+    width: 332px;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 40px;
+    text-align: left;
+    margin-bottom: 14px;
+    margin-top: 40px;
+
+    @media screen and(min-width: $tablet) {
+        width: 700px;
+            font-size: 60px;
+            font-weight: 500;
+            line-height: 110%;
+            text-align: left;
+display: flex;
+
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    }
+
+
+    @media screen and(min-width: $desktop) {
+        width: 432px;
+                font-size: 60px;
+                font-weight: 500;
+                display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+
+            
+    }
+
+
+}
+
+
+
+.hero-title-part {
+    font-style: normal;
+    color: #ffffff;
+}
+
+.hero-title-strong {
+    margin-left: 7px;
+    font-size: 36px;
+    font-weight: 500;
+    text-align: left;
+    color: rgb(161, 181, 186);
+
+    @media screen and(min-width: $tablet) {
+            font-size: 60px;
+            font-weight: 500;
+            text-align: left;
+            font-style: italic;
+            margin: 0px;
+            
+            
+    }
+
+    @media screen and(min-width: $desktop) {
+            text-align: left;
+            font-size: 60px;
+                font-weight: 500;
+            
+    }
+
+
+}
+
+.hero-text {
+    margin-bottom: 24px;
+
+    @media screen and(min-width: $tablet) {
+        width: 509px;
+    }
+
+}
+
+.hero-btn-grey {
+    width: 130px;
+    height: 43px;
+    border-radius: 60px;
+    background-color: rgb(147, 171, 174);
+    color: rgb(246, 245, 239);
+    transition: background-color 600ms ease-in-out;
+}
+
+.hero-btn-grey:hover {
+    background-color: rgb(136, 179, 185);;
+}
+
+.hero-btn-black {
+    width: 104px;
+    height: 43px;
+    background-color: rgb(17, 19, 31);
+    color: rgb(246, 245, 239);
+    border: 2px solid rgb(246, 245, 239);
+    border-radius: 60px;
+}
+
+.hero-btn-black:hover {
+    color: rgb(147, 171, 174);
+    border-color: rgb(147, 171, 174);
+}
+
+.hero-img {
+    z-index: 1;
+    margin-top: 40px;
+    position: relative;
+    
+
+    
+
+    
+
+}
+
+.main-holder {
+    @media screen and(min-width: $desktop) {
+            margin-left: 250px;
+        }
+}
+
+.hero-mask {
+    @media screen and(min-width: $tablet) {
+        width: 426px;
+            height: 598px;
+    }
+}
+
+.hero-clients {
+    top: 0;
+    position: absolute;
+    margin: 15px 15px;
+
+    @media screen and(min-width: $tablet) {
+        width: 149px;
+        height: 56px;
+    }
+
+}
+
+.hero-clients-text {
+    top: 65px;
+    margin: 15px 15px;
+    position: absolute;
+    color: rgb(17, 19, 31);
+        font-size: 14px;
+        font-weight: 700;
+        text-align: left;
+
+
+        @media screen and(min-width: $tablet) {
+            width: 96px;
+            height: 15px;
+        }
+}
+
+
+.hero-man {
+    position: absolute;
+    left: 210px;
+    top: 30px;
+
+
+    @media screen and(min-width: $tablet) {
+        display: none;
+    }
+}
+
+
+.hero-man-tab {
+    display: none;
+    @media screen and(min-width: $tablet) {
+        display: block;
+        position: absolute;
+        left: 350px;
+        top: 30px;
+    }
+}
+
+.hero-yacht {
+    position: absolute;
+    left: 20px;
+    top: 160px;
+    
+    @media screen and(min-width: $tablet) {
+        left: 20px;
+            top: 240px;
+        width: 378px;
+        height: 221px;
+    }
+
+}
+
+.hero-price {
+    position: absolute;
+    bottom: 20px;
+    color: rgb(17, 19, 31);
+        font-size: 48px;
+        font-weight: 400;
+        line-height: 110%;
+        text-align: left;
+        margin: 15px 15px;
+
+
+        @media screen and(min-width: $tablet) {
+            width: 130px;
+            bottom: 20px;
+            left: 10px;
+            height: 66px;
+                font-size: 60px;
+                font-weight: 400;
+            
+        }
+}
+
+
+.hero-mask-text {
+    position: absolute;
+    bottom: 42px;
+    left: 135px;
+    width: 180px;
+    color: rgb(17, 19, 31);
+        font-size: 14px;
+        font-weight: 400;
+        text-align: left;
+
+
+    @media screen and(min-width: $tablet) {
+            font-size: 18px;
+            font-weight: 400;
+            width: 258px;
+            height: 36px;
+            bottom: 52px;
+                left: 175px;
+    }
+
+}

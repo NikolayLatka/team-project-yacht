@@ -1,19 +1,33 @@
 $(function () {
-  $('').slick({
-    arrows: false,
-    dots: true,
-    fade: true,
-    autoplay: true,
-    autoplaySpeed: 3000,
-  });
-});
-
-$(function () {
-  $('.rewiew-list').slick({
-    arrows: false,
-    dots: true,
-    fade: true,
+  $('.yachts-list').slick({
+    arrows: true,
+    dots: false,
+    fade: false,
     autoplay: false,
-    autoplaySpeed: 3000,
+    slidesToScroll: 1,
+    slidesToShow: 1,
+    responsive: [
+      {
+        breakpoint: 2660,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 1280,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   });
 });
