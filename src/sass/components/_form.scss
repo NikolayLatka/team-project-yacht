@@ -5,6 +5,7 @@
   background-position: 80px 270px;
 
   margin: 0 auto;
+  padding: 0 20px 0;
 
   width: $mobile;
   height: 676px;
@@ -12,7 +13,30 @@
   background-color: $brown;
 
   @media screen and (min-width: 768px) {
+    background-image: url(../images/ellipses/ellipse-form.png);
+    background-size: 500px;
+    background-repeat: no-repeat;
+    background-position: 500px -40px;
+
     width: 768px;
+    height: 351px;
+    // height: 1000px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    padding: 0 32px 0;
+  }
+
+  &--flex {
+    @media screen and (min-width: $tablet) {
+      display: flex;
+    }
+  }
+
+  &__info {
+    margin-right: 69px;
   }
 
   &__title {
@@ -24,26 +48,66 @@
     line-height: 110%;
 
     margin-bottom: 16px;
+
+    @media screen and (min-width: $tablet) {
+      font-size: 60px;
+
+      margin-bottom: 32px;
+
+      width: 287px;
+      height: 132px;
+    }
   }
 
   &__img {
+    width: 259px;
+    height: 187px;
     margin-bottom: 40px;
+
+    @media screen and (min-width: $tablet) {
+      width: 271px;
+      height: 187px;
+
+      margin-bottom: 0;
+    }
   }
 
   &__form {
     display: flex;
     flex-direction: column;
     gap: 24px;
+
+    @media screen and (min-width: $tablet) {
+      width: 364px;
+      // height: 346px;
+
+      // display: inline-block;
+    }
   }
 
   &__label {
     display: flex;
     flex-direction: column;
+    // margin-bottom: 24px;
+
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 5px;
+    }
+  }
+
+  &-comment {
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 32px;
+    }
   }
 
   &__span {
     font-weight: 500;
     line-height: 120%;
+
+    @media screen and (min-width: $tablet) {
+      font-size: 16px;
+    }
   }
 
   &__input {
@@ -79,6 +143,11 @@
     align-items: center;
     justify-content: center;
     padding: 14px 28px;
+
+    @media screen and (min-width: $tablet) {
+      width: 132px;
+      height: 48px;
+    }
   }
 
   &__btn-svg {
