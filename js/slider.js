@@ -31,3 +31,37 @@ $(function () {
     ],
   });
 });
+
+$(function () {
+  $('.rewiew-list').slick({
+    arrows: false,
+    dots: true,
+    fade: false,
+    autoplay: false,
+    // slidesToScroll: 1,
+    // slidesToShow: 1,
+    responsive: [
+      {
+        breakpoint: 375,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 1280,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 0,
+        },
+      },
+    ],
+  });
+});

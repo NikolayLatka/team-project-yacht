@@ -1,6 +1,6 @@
 .customers {
   width: $mobile;
-  margin: auto;
+  margin: 0 auto;
   text-align: center;
   background-color: #1e293b;
 }
@@ -38,10 +38,11 @@
 }
 
 .rewiew-list {
-  align-items: center;
-  justify-content: center;
-
   &__item {
+    width: 335px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin-top: 40px;
     background-color: $grey;
     // width: 335px;
@@ -50,7 +51,6 @@
     padding: 24px 24px 24px 24px;
     gap: 8px;
     border-radius: 24px;
-    opacity: 0;
   }
   &__name {
     margin-top: 18px;
@@ -74,9 +74,23 @@
   }
 }
 
-.rewiew-list__image {
-  margin-left: 120px;
-}
+// .rewiew-list__item {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   margin-top: 40px;
+//   background-color: $grey;
+//   // width: 335px;
+//   // height: 208px;
+//   // left: 20px;
+//   padding: 24px 24px 24px 24px;
+//   gap: 8px;
+//   border-radius: 24px;
+// }
+
+// .rewiew-list__image {
+//   margin-left: 120px;
+// }
 .slick-dots {
   display: flex;
   align-items: center;
