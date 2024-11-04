@@ -1,0 +1,37 @@
+.menu-btn {
+    padding: 0;
+
+    background-color: #11131F ;
+}
+header {
+    background-color: #11131F ;
+    height: 72px;
+}
+.menu-btn__icon {
+    
+    width: 24px;
+    height: 24px;
+}
+.header--container {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: rgba(246, 245, 239, 0.2);
+    height: 72px;
+
+}
+.logo {
+    display: block;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+}
+.logo__icon {
+    width: 18px;
+}
+.logo__title {
+    display: block;
+    color: $main-color;
+    text-transform: uppercase;
+
+}

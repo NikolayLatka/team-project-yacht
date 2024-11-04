@@ -1,0 +1,42 @@
+.menu-close-btn__icon {
+    width: 24;
+    height: 24px;
+}
+.menu-container {
+    background-color: #11131F ;
+    position: fixed;
+    left: 0;
+    top: 0;
+    // height: 100%;
+    width: 100vw;
+    height: 100vh;
+    transform: translateX(100%);
+    // opacity: 0;
+    // pointer-events: none;
+    transition: transform 0.5s ease-in-out;
+}
+.menu-container.is-open {
+
+    transform: translateX(0%);
+}
+.menu--container {
+    background-color: #11131F;
+    // height: 72px;
+    display: flex;
+    justify-content: center;
+    // height: 100%;
+}
+.mobile-nav {
+    margin-top: 140px ;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+.mobile-nav__item {
+
+}
+.mobile-nav__link {
+    color: $main-color;
+    text-transform: uppercase;
+
+}
