@@ -2,31 +2,43 @@
   width: $mobile;
   margin: 0 auto;
   text-align: center;
-  background-color: #1e293b;
+  background-color: #11131f;
+
+  @media screen and(min-width: $tablet) {
+    width: 768px;
+  }
 }
 
 .customers__title {
   color: $main-color;
   font-family: DM Sans;
-  font-size: 24px;
+  font-size: 32px;
   font-weight: 400;
-  line-height: 28.8px;
+  line-height: 40px;
   letter-spacing: -0.045em;
   text-align: left;
+
+  @media screen and(min-width: $tablet) {
+    width: 480px;
+    text-align: start;
+    margin-bottom: 32px;
+  }
 
   &--color {
     color: $focus-state;
     font-family: DM Sans;
-    font-size: 24px;
+    font-size: 32px;
     font-style: italic;
     font-weight: 500;
     line-height: 28.8px;
-    letter-spacing: -0.045em;
+    letter-spacing: -4, 5%;
+
     text-align: left;
   }
 }
 
 .customers__subtitle {
+  position: relative;
   margin-top: 24px;
   color: $main-color;
   font-family: DM Sans;
@@ -35,13 +47,20 @@
   line-height: 19.6px;
   letter-spacing: -0.02em;
   text-align: left;
+
+  @media screen and(min-width: $tablet) {
+    width: 242px;
+    margin-left: 461px;
+    margin-bottom: 64px;
+  }
 }
 
 .rewiew-list {
   &__item {
     width: 335px;
-    display: flex;
+    display: flex !important;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
     margin-top: 40px;
     background-color: $grey;
@@ -51,6 +70,8 @@
     padding: 24px 24px 24px 24px;
     gap: 8px;
     border-radius: 24px;
+    @media screen and(min-width: $tablet) {
+    }
   }
   &__name {
     margin-top: 18px;
@@ -63,6 +84,7 @@
     text-align: center;
   }
   &__comment {
+    text-align: start;
     margin-top: 8px;
     color: rgba(246, 245, 239, 0.5);
     font-family: DM Sans;
@@ -71,24 +93,18 @@
     line-height: 16.8px;
     letter-spacing: -0.02em;
     text-align: Center;
+    @media screen and(min-width: $tablet) {
+      width: 242px;
+    }
+  }
+  &__image {
+    width: 48px;
+    height: 48px;
   }
 }
 
-// .rewiew-list__item {
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   margin-top: 40px;
-//   background-color: $grey;
-//   // width: 335px;
-//   // height: 208px;
-//   // left: 20px;
-//   padding: 24px 24px 24px 24px;
-//   gap: 8px;
-//   border-radius: 24px;
-// }
-
 .slick-dots {
+  margin-top: 31px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -121,60 +137,5 @@
   scale: 1.2;
 }
 
-// .slick-active button {
-//   opacity: 0;
-//   background-color: rgba(136, 179, 185, 1);
-// }
-
-// .title {
-//   font-size: 24px;
-//   font-weight: bold;
-//   color: #f6f5ef;
-//   text-align: start;
-// }
-
-// .title .title-text {
-//   font-style: italic;
-// }
-
-// .title-text {
-//   color: #bec7c2;
-// }
-
-// .customers-text {
-//   margin-top: 24px;
-//   font-size: 16px;
-//   color: #f6f5ef;
-//   text-align: start;
-// }
-
-// .testimonial {
-//   background-color: #1e293b;
-//   padding: 20px;
-//   border-radius: 10px;
-//   margin-top: 20px;
-// }
-
-// .biography {
-//   height: 208px;
-//   width: 335px;
-//   border-radius: 25px;
-//   background-color: #1f212d;
-// }
-
-// .biography img {
-//   width: 80px;
-//   height: 80px;
-//   border-radius: 50%;
-// }
-
-// .biography .name {
-//   font-size: 18px;
-//   font-weight: bold;
-//   margin-top: 10px;
-// }
-
-// .biography .review {
-//   font-size: 14px;
-//   margin-top: 10px;
-// }
+.slick-initialized .slick-slide {
+}
