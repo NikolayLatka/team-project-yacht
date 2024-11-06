@@ -12,15 +12,16 @@
 
   background-color: $brown;
 
+  overflow: hidden;
+
   @media screen and (min-width: 768px) {
     background-image: url(../images/ellipses/ellipse-form.png);
-    background-size: 500px;
+    background-size: 700px;
     background-repeat: no-repeat;
-    background-position: 500px -40px;
+    background-position: 420px -70px;
 
     width: 768px;
-    height: 351px;
-    // height: 1000px;
+    height: 451px;
 
     display: flex;
     flex-direction: row;
@@ -29,7 +30,18 @@
     padding: 0 32px 0;
   }
 
+  @media screen and (min-width: $desktop) {
+    background-image: url(../images/ellipses/ellipse-form.png);
+    background-repeat: no-repeat;
+    background-position: 890px -50px;
+    background-size: 750px;
+
+    width: 1280px;
+    height: 551px;
+  }
+
   &--flex {
+    outline: none;
     @media screen and (min-width: $tablet) {
       display: flex;
     }
@@ -37,6 +49,11 @@
 
   &__info {
     margin-right: 69px;
+
+    @media screen and (min-width: $desktop) {
+      margin-left: auto;
+      margin-right: 188px;
+    }
   }
 
   &__title {
@@ -49,6 +66,10 @@
 
     margin-bottom: 16px;
 
+    animation: pulse;
+    animation-duration: 3000ms;
+    animation-iteration-count: infinite;
+
     @media screen and (min-width: $tablet) {
       font-size: 60px;
 
@@ -56,6 +77,11 @@
 
       width: 287px;
       height: 132px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      font-size: 60px;
+      margin-bottom: 64px;
     }
   }
 
@@ -70,6 +96,11 @@
 
       margin-bottom: 0;
     }
+
+    @media screen and (min-width: $desktop) {
+      width: 282px;
+      height: 191px;
+    }
   }
 
   &__form {
@@ -83,6 +114,14 @@
 
       // display: inline-block;
     }
+
+    @media screen and (min-width: $desktop) {
+      margin-right: auto;
+    }
+
+    @media screen and (min-width: $desktop) {
+      width: 443px;
+    }
   }
 
   &__label {
@@ -90,14 +129,20 @@
     flex-direction: column;
     // margin-bottom: 24px;
 
-    @media screen and (min-width: $tablet) {
-      margin-bottom: 5px;
-    }
+    // &:is(:hover, :focus) .form__span {
+    //   animation: lightSpeedInRight;
+    //   // animation-duration: 1.5s;
+    //   // animation-iteration-count: infinite;
+    // }
   }
 
-  &-comment {
+  &__label-comment {
     @media screen and (min-width: $tablet) {
       margin-bottom: 32px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 60px;
     }
   }
 
@@ -143,6 +188,12 @@
     align-items: center;
     justify-content: center;
     padding: 14px 28px;
+
+    &:is(:hover, :focus) {
+      animation: pulse;
+      animation-duration: 1.5s;
+      animation-iteration-count: infinite;
+    }
 
     @media screen and (min-width: $tablet) {
       width: 132px;
