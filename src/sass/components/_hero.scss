@@ -1,48 +1,51 @@
 .hero {
+    position: relative;
     width: 375px;
     margin: 0 auto;
-    display: flex;
-    justify-content: center;
     height: 880px;
     background-color: #11131f;
-    background-image: url(../images/ellipses/ellipse-hero-tiny.png);
-    background-position: right 250px bottom 208px;
-    background-repeat: no-repeat;
-    background-size: 279px 279px;
-
+    margin-top: 40px;
 
     @media screen and(min-width:$tablet) {
         width: 768px;
         height: 1107px;
         background-color: #11131f;
-            background-image: url(../images/ellipses/ellipse-hero-side.png);
-            background-position: right 500px bottom 200px;
-            background-size: 414px 414px;
     }
-
 
     @media screen and(min-width: $desktop) {
         width: 1280px;
-        margin: 0 auto;
     }
 
+    &__bg-img {
+        position: absolute;
+        left: 0;
+        top: 400px;
 
+        width: 250px;
+        height: 250px;
 
+        background-color: rgb(225, 225, 225);
+        filter: blur(80px);
 
+        @media screen and(min-width: $tablet) {
+            width: 360px;
+            height: 360px;
+            left: 35px;
+        }
+
+        @media screen and(min-width: $desktop) {
+            width: 400px;
+            height: 400px;
+            top: 450px;
+        }
+    }
 }
 
 
-.hero-br {
-    @media screen and(min-width: $tablet) {
-        display: none;
-    }
 
-    @media screen and(min-width: $desktop) {
-        display: block;
-    }
-}
 
 .hero-flex {
+    outline: none;
     @media screen and(min-width: $desktop) {
             display: flex;
             align-items: center;
@@ -53,40 +56,29 @@ flex-direction: row-reverse;
 
 
 .hero-title {
-    width: 332px;
+    width: 336px;
     font-size: 36px;
     font-weight: 500;
     line-height: 40px;
     text-align: left;
     margin-bottom: 14px;
-    margin-top: 40px;
+    line-height: 110%;
 
     @media screen and(min-width: $tablet) {
-        width: 700px;
-            font-size: 60px;
-            font-weight: 500;
-            line-height: 110%;
-            text-align: left;
-display: flex;
-
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: column;
+        width: 698px;
+        font-size: 60px;
     }
-
 
     @media screen and(min-width: $desktop) {
         width: 554px;
-        font-weight: 500;
-        text-align: left;
-
-            
+        font-size: 61px;
     }
-
-    
-
 }
 
+.hero-title-strong {
+    color: rgb(161, 181, 186);
+    font-style: italic;
+}
 
 
 .hero-title-part {
