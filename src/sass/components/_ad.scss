@@ -1,4 +1,6 @@
 .ad {
+  height: 1620px;
+  position: relative;
   width: 375px;
   margin: 0 auto;
   background-color: #11131f;
@@ -27,4 +29,34 @@
 }
 .ad__img {
   height: 100%;
+}
+.ad__title {
+  width: 310px;
+  margin-bottom: 40px;
+  font-family: DM Sans;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 110%;
+}
+.ad__list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.ad__list-item:last-child {
+  position: relative;
+  right: 0;
+}
+.ad__button {
+  width: 131px;
+  height: 43px;
+  border: 1px solid rgb(246, 245, 239);
+  border-radius: 60px;
+  color: rgb(246, 245, 239);
+  background-color: transparent;
+}
+.ad__text-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
