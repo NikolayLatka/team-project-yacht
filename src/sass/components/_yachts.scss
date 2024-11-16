@@ -1,19 +1,24 @@
 .yachts {
+    
     width: 375px;
+        padding-top: 80px;
+        padding-bottom: 80px;
     margin: 0 auto;
     position: relative;
-    height: 530px;
+    height: 630px;
     background-color: #11131f;
     display: flex;
     justify-content: center;
 
     @media screen and(min-width: $tablet) {
+        padding: 0;
         height: 716px;
         width: 768px;
     }
 
 
     @media screen and(min-width: $desktop) {
+        padding: 0;
         background-image: url(../images/lines.png);
         background-position: top -250px left -50px;
         background-blend-mode: soft-light;
@@ -22,6 +27,8 @@
         height: 836px;
 
     }
+
+
 
 }
 
