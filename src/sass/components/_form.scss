@@ -5,10 +5,11 @@
   background-position: 80px 270px;
 
   margin: 0 auto;
-  padding: 0 20px 0;
+  padding: 100px 20px 0;
 
   width: $mobile;
-  height: 676px;
+  // height: 676px;
+  height: 774px;
 
   background-color: $brown;
 
@@ -167,6 +168,10 @@
 
     &-comment {
       height: 58px;
+
+      resize: vertical;
+
+      outline: none;
     }
   }
 
