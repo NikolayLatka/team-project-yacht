@@ -9,7 +9,7 @@
     }
 
 
-    background-color: #11131F;
+    background-color: white;
     position: fixed;
     left: 0;
     top: 0;
@@ -28,15 +28,9 @@
     transform: translateX(0%);
     opacity: 1;
         }
-.overflow-container {
-    max-width: 375px;
-    margin: 0 auto;
-    height: 100vh;
-    z-index: 4;
-    overflow: hidden;
-}
-.menu--container {
 
+.menu--container {
+    max-width: 375px ;
     background-color: #11131F;
     position: relative;
     display: flex;

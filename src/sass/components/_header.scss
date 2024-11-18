@@ -32,8 +32,22 @@ header {
     margin: 0 auto;
     justify-content: space-between;
     border-bottom: rgba(246, 245, 239, 0.2);
+    background-color:#11131F ;
     height: 72px;
-
+    padding: 0 21px;
+    width: 375px;
+    @media  screen and (max-width: $mobile) {
+        width: 100%;
+        
+    }
+    @media screen and (min-width: $tablet) {
+        width: 768px;
+    }
+    @media screen and (min-width: $desktop) {
+        @media screen and (min-width: $desktop) {
+            width: 1280px;
+    }
+}
 }
 .logo {
     display: block;
