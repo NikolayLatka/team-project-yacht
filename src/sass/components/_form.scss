@@ -13,8 +13,6 @@
 
   background-color: $brown;
 
-  overflow: hidden;
-
   @media screen and (min-width: 768px) {
     background-image: url(../images/ellipses/ellipse-form.png);
     background-size: 700px;
@@ -43,6 +41,8 @@
 
   &--flex {
     outline: none;
+    overflow: hidden;
+
     @media screen and (min-width: $tablet) {
       display: flex;
     }
