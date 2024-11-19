@@ -36,6 +36,7 @@ header {
     height: 72px;
     padding: 0 21px;
     width: 375px;
+    outline: none;
     @media  screen and (max-width: $mobile) {
         width: 100%;
         
