@@ -1,0 +1,175 @@
+.footer {
+    position: relative;
+    padding-top: 18px;
+    width: 375px;
+    height: 378px;
+    margin: 0 auto;
+    background-color: #11131f;
+    font-size: 14px;
+        font-weight: 700;
+        line-height: 118%;
+        letter-spacing: 3%;
+        background-image: url(../images/ellipses/ellipse-footer.png);
+        background-blend-mode: soft-light;
+        background-position: center top;
+
+
+
+        @media screen and(min-width: $tablet) {
+            width: $tablet;
+            height: 280px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: row;
+            background-image: url(../images/ellipses/ellipse-footer.png);
+                background-blend-mode: soft-light;
+                background-position: center top;
+            
+        }
+
+
+        @media screen and(min-width: $desktop) {
+            width: $desktop;
+            background-image: url(../images/ellipses/ellipse-footer.png);
+                background-blend-mode: soft-light;
+                background-position: left top;
+        }
+}
+
+.footer-flex {
+    outline: none;
+    @media screen and(min-width: $tablet) {
+        position: relative;
+                    display: flex;
+                        justify-content: space-around;
+                        align-items: flex-start;
+                        flex-direction: row;
+    }
+}
+
+.footer::before {
+    position: absolute;
+    top: -24px;
+    right: 50%;
+    transform: translateX(50%);
+    content: " ";
+    display: block;
+    width: 335px;
+    height: 1px;
+    background-color: rgba(246, 245, 239, 0.2);
+
+    @media screen and(min-width: $tablet) {
+        width: 704px;
+    }
+
+    @media screen and(min-width: $desktop) {
+        width: 1216px;
+    }
+}
+
+.footer-logo-link {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: rgb(246, 245, 239);
+    gap: 10px;
+    margin-bottom: 40px;
+
+    @media screen and(min-width: $tablet) {
+        padding-top: 40px;
+        transform: translateX(-80px);
+    }
+
+    @media screen and(min-width: $desktop) {
+        transform: translate(-210px , -10px);
+    }
+}
+
+.footer-nav-list {
+    display: flex;
+    flex-direction: column;
+
+    @media screen and(min-width: $tablet) {
+        width: 64px;
+        justify-content: center;
+        align-items: center;
+        transform: translateX(-220%);
+    }
+
+    @media screen and(min-width: $desktop) {
+        transform: translate(-430% , -10px);
+    }
+}
+
+.footer-icon {
+    width: 15px;
+    height: 15px;
+}
+
+.icon-holder {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 14px;
+    margin-bottom: 40px;
+}
+
+.footer-media-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border: 2px solid rgba(246, 245, 239, 0.5);
+    border-radius: 6px;
+    
+}
+
+.footer-media {
+    @media screen and(min-width: $tablet) {
+        transform: translate(80px, -223%);
+
+    }
+
+    @media screen and(min-width: $desktop) {
+        transform: translate(200px, -243%);
+    }
+}
+
+.footer-nav-item:not(:last-child) {
+    margin-bottom: 14px;
+}
+
+
+.footer-nav-item:last-child {
+    margin-bottom: 65px;
+}
+
+.footer-social-title {
+    margin-bottom: 16px;
+}
+
+.title-police-wrapper {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+    width: 100%;
+    align-items: end;
+    flex-direction: row;
+    gap: 14px;
+    font-size: 12px;
+        font-weight: 400;
+        line-height: 118%;
+        letter-spacing: 3%;
+        color: rgba(246, 245, 239, 0.5);
+}
+
+
+.footer-nav {
+    padding-top: 40px;
+}
