@@ -1,9 +1,33 @@
-.form {
-  background-image: url(../images/ellipses/ellipse-form.png);
-  background-size: 600px;
-  background-repeat: no-repeat;
-  background-position: 80px 270px;
+.main-wrapper {
+  position: relative;
+}
 
+.section-bg-image {
+  position: absolute;
+  right: 0;
+  top: 28%;
+  width: 230px;
+  height: 230px;
+
+  filter: blur(200px);
+  background: rgb(145, 175, 186);
+
+  @media screen and (min-width: $tablet) {
+    width: 280px;
+    height: 280px;
+
+    top: 10%;
+    right: -200px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 340px;
+    height: 340px;
+
+    right: -150px;
+  }
+}
+
+.form {
   margin: 0 auto;
   padding: 100px 20px 0;
 
@@ -16,11 +40,6 @@
   overflow: hidden;
 
   @media screen and (min-width: 768px) {
-    background-image: url(../images/ellipses/ellipse-form.png);
-    background-size: 700px;
-    background-repeat: no-repeat;
-    background-position: 420px -70px;
-
     width: 768px;
     height: 451px;
 
@@ -32,11 +51,6 @@
   }
 
   @media screen and (min-width: $desktop) {
-    background-image: url(../images/ellipses/ellipse-form.png);
-    background-repeat: no-repeat;
-    background-position: 890px -50px;
-    background-size: 750px;
-
     width: 1280px;
     height: 551px;
   }
@@ -58,8 +72,7 @@
   }
 
   &__title {
-    width: 271px;
-    height: 40px;
+    width: 270px;
 
     font-size: 36px;
     font-weight: 500;
