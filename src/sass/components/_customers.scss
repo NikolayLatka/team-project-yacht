@@ -3,10 +3,19 @@
   margin: 0 auto;
   text-align: center;
   background-color: #11131f;
+  padding-bottom: 80px;
 
   @media screen and(min-width: $tablet) {
     width: 768px;
   }
+
+  @media screen and(min-width: $desktop) {
+    width: 1280px;
+  }
+}
+
+.customers-flex {
+  outline: none;
 }
 
 .customers__title {
@@ -18,10 +27,21 @@
   letter-spacing: -0.045em;
   text-align: left;
 
+  @media screen and(min-width: $mobile) {
+    font-size: 24px;
+  }
+
   @media screen and(min-width: $tablet) {
     width: 480px;
     text-align: start;
     margin-bottom: 32px;
+  }
+
+  @media screen and(min-width: $desktop) {
+    width: 480px;
+    line-height: 40px;
+    display: start;
+    font-size: 32px;
   }
 
   &--color {
@@ -31,9 +51,15 @@
     font-style: italic;
     font-weight: 500;
     line-height: 28.8px;
-    letter-spacing: -4, 5%;
-
     text-align: left;
+
+    @media screen and(min-width: $mobile) {
+      font-size: 24px;
+    }
+
+    @media screen and(min-width: $desktop) {
+      font-size: 32px;
+    }
   }
 }
 
@@ -48,16 +74,29 @@
   letter-spacing: -0.02em;
   text-align: left;
 
+  @media screen and(min-width: $mobile) {
+    margin-bottom: 40px;
+  }
+
   @media screen and(min-width: $tablet) {
     width: 242px;
     margin-left: 461px;
     margin-bottom: 64px;
   }
+
+  @media screen and(min-width: $desktop) {
+    width: 273px;
+    margin-top: 0;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: -2%;
+    line-height: 140%;
+  }
 }
 
 .rewiew-list {
   &__item {
-    width: 335px;
+    width: 100%;
     display: flex !important;
     flex-direction: column;
     align-items: center;
@@ -70,9 +109,12 @@
     padding: 24px 24px 24px 24px;
     gap: 8px;
     border-radius: 24px;
-    @media screen and(min-width: $tablet) {
+
+    @media screen and(min-width: $desktop) {
+      max-width: 384px;
     }
   }
+
   &__name {
     margin-top: 18px;
     color: $main-color;
@@ -82,7 +124,13 @@
     line-height: 17.6px;
     letter-spacing: -0.045em;
     text-align: center;
+
+    @media screen and(min-width: $desktop) {
+      font-weight: 500;
+      font-size: 18px;
+    }
   }
+
   &__comment {
     text-align: start;
     margin-top: 8px;
@@ -93,13 +141,34 @@
     line-height: 16.8px;
     letter-spacing: -0.02em;
     text-align: Center;
+
     @media screen and(min-width: $tablet) {
       width: 242px;
     }
+
+    @media screen and(min-width: $desktop) {
+      width: 320px;
+      font-size: 16px;
+      line-height: 140%;
+    }
   }
+
   &__image {
     width: 48px;
     height: 48px;
+
+    @media screen and(min-width: $desktop) {
+      width: 56px;
+      height: 56px;
+    }
+  }
+}
+
+.customers__title--wrapp {
+  @media screen and(min-width: $desktop) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
   }
 }
 
@@ -109,6 +178,14 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
+
+  @media screen and(min-width: $mobile) {
+    margin-top: 14px;
+  }
+
+  @media screen and(min-width: $desktop) {
+    display: none;
+  }
 }
 
 .slick-dots button {
@@ -135,7 +212,4 @@
 .slick-active button::before {
   background-color: rgba(136, 179, 185, 1);
   scale: 1.2;
-}
-
-.slick-initialized .slick-slide {
 }

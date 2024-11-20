@@ -39,13 +39,19 @@ header {
     background-color:#11131F;
     height: 72px;
     position: relative;
-    padding: 0 21px;
+
     width: 375px;
     align-items: center;
     display: flex;
     margin: 0 auto;
     height: 72px;
+
     justify-content: space-between;
+
+    padding: 0 21px;
+
+    outline: none;
+
     @media  screen and (max-width: $mobile) {
         width: 100%;
         
