@@ -21,8 +21,6 @@
     transform: translateX(200%);
     opacity: 0;
     transition: opacity 0.5s ease-out;
-
-
 }
 .menu-container.is-open {
     transform: translateX(0%);
