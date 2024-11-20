@@ -4,49 +4,112 @@
   width: 375px;
   margin: 0 auto;
   background-color: #11131f;
+
+  @media screen and(min-width:$tablet) {
+    width: 768px;
+    height: 1680px;
+  }
+
+  @media screen and(min-width: $desktop) {
+    width: 1280px;
+  }
 }
+
+.ad-flex {
+  outline: none;
+}
+
 .ad__text {
-  width: 335px;
-  font-family: DM Sans;
+  width: 350px;
+
   font-weight: 500;
   font-size: 24px;
-  margin-bottom: 40px;
+  line-height: 1.2;
+
+  @media screen and(min-width:$tablet) {
+    width: 534px;
+
+    font-weight: 500;
+    font-size: 32px;
+
+    margin-bottom: 32px;
+  }
+
+  @media screen and(min-width: $desktop) {}
 }
+
+.text-wrapp {
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+
+  @media screen and(min-width: $desktop) {
+    flex-direction: row;
+  }
+}
+
 .ad__text--light {
   color: rgb(190, 199, 194);
 }
+
 .ad__text--wrapp {
   display: flex;
   gap: 14px;
   margin-bottom: 40px;
+
+  @media screen and(min-width:$tablet) {
+    margin-left: 304px;
+  }
+
+  @media screen and(min-width:$tablet) {
+    top: 0;
+    right: 0;
+    align-self: flex-end;
+  }
 }
+
 .ad__text__second {
   width: 160px;
 }
+
 .ad__item {
   height: 524px;
   width: 335px;
 }
+
 .ad__img {
   height: 100%;
 }
+
 .ad__title {
   width: 310px;
   margin-bottom: 40px;
-  font-family: DM Sans;
+
   font-size: 36px;
   font-weight: 500;
   line-height: 110%;
+
+  @media screen and(min-width: $tablet) {
+    display: flex;
+    text-align: center;
+    width: 641px;
+    font-size: 70px;
+  }
+
+  @media screen and(min-width: $desktop) {
+    display: flex;
+    text-align: center;
+    width: 641px;
+    font-size: 70px;
+  }
 }
+
 .ad__list {
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
-.ad__list-item:last-child {
-  position: relative;
-  right: 0;
-}
+
 .ad__button {
   width: 131px;
   height: 43px;
@@ -55,8 +118,92 @@
   color: rgb(246, 245, 239);
   background-color: transparent;
 }
+
 .ad__text-container {
   position: absolute;
   bottom: 0;
+  left: 20px;
+
+  @media screen and(min-width: $tablet) {
+    transform: translate(32px, 0px);
+  }
+
+  @media screen and(min-width: $desktop) {
+    transform: translate(280px, -288px);
+  }
+}
+
+.ad-circle {
+  position: absolute;
+  bottom: 30px;
   left: 0;
+  width: 160px;
+  height: 160px;
+
+  background-color: rgb(225, 225, 225);
+  filter: blur(100px);
+  z-index: 1;
+
+  @media screen and(min-width: $tablet) {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    width: 160px;
+    height: 160px;
+
+    background-color: rgb(225, 225, 225);
+    filter: blur(100px);
+    z-index: 1;
+    transform: translate(222px, -96px);
+  }
+
+  @media screen and(min-width: $desktop) {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    width: 160px;
+    height: 160px;
+
+    background-color: rgb(225, 225, 225);
+    filter: blur(100px);
+    z-index: 1;
+    transform: translate(549px, -404px);
+  }
+}
+
+.ad__list-item:first-child .ad__img {
+  height: 524px;
+
+  @media screen and(min-width: $tablet) {
+    width: 704px;
+    height: 631px;
+
+    @media screen and(min-width: $desktop) {
+      transform: translate(328px, 28px);
+      width: 690px;
+    }
+  }
+}
+
+.ad__list-item .ad__img__gap {
+  @media screen and(min-width: $tablet) {}
+
+  @media screen and(min-width: $desktop) {
+    transform: translate(6px, -197px);
+  }
+}
+
+.ad__list-item:last-child {
+  //   position: relative;
+  //   right: 0;
+  width: 260px;
+  align-self: flex-end;
+
+  @media screen and(min-width: $tablet) {
+    transform: translate(-102px, -197px);
+  }
+
+  @media screen and(min-width: $desktop) {
+    transform: translate(-625px, -258px);
+  }
 }
