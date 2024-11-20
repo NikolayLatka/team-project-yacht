@@ -23,10 +23,29 @@
       <include src="./partials/ad.html"></include>
       <include src="./partials/yachts.html"></include>
       <include src="./partials/gallery.html"></include>
-      <include src="./partials/form.html"></include>
-      <include src="./partials/customers.html"></include>
+      <div class="main-wrapper">
+        <div class="section-bg-image"></div>
+        <include src="./partials/form.html"></include>
+        <include src="./partials/customers.html"></include>
+      </div>
     </main>
-    <include src="./partials/footer.html"></include>
+      <include src="./partials/footer.html"></include>
+    <!-- upward script -->
+    <script>
+      window.addEventListener('scroll', function () {
+        var scroll = document.querySelector('.upward');
+        scroll.classList.toggle('active', window.scrollY > 500);
+      });
+      function scrollTopTop() {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth',
+        });
+      }
+    </script>
+
+
+
     <!-- modal -->
     <include src="./partials/modal.html"></include>
     <!-- mobile-menu -->
