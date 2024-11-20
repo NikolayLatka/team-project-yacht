@@ -8,16 +8,21 @@
     background-color: #11131F ;
 }
 header {
+    @media screen and (max-width: $mobile) {
+        width: 100%;
+        }
     @media screen and (min-width: $tablet) {
-        max-width: 768px;
+    width: 768px;
     }
     @media screen and (min-width: $desktop) {
-        max-width: 1280px;
+    width: 1280px;
     }
     margin: 0 auto;
-    max-width: 375px ;
-    background-color: #11131F ;
+    width: 375px;
+
+    box-sizing: border-box;
     height: 72px;
+
 
 
 }
@@ -27,21 +32,27 @@ header {
     height: 24px;
 }
 .header--container {
+
+    box-sizing: border-box;
+
+
+    background-color:#11131F;
+    height: 72px;
+    position: relative;
+    padding: 0 21px;
+    width: 375px;
     align-items: center;
     display: flex;
     margin: 0 auto;
-    justify-content: space-between;
-    border-bottom: rgba(246, 245, 239, 0.2);
-    background-color:#11131F ;
     height: 72px;
-    padding: 0 21px;
-    width: 375px;
+    justify-content: space-between;
     @media  screen and (max-width: $mobile) {
         width: 100%;
         
     }
     @media screen and (min-width: $tablet) {
         width: 768px;
+        padding: 0 32px;
     }
     @media screen and (min-width: $desktop) {
         @media screen and (min-width: $desktop) {
@@ -49,6 +60,7 @@ header {
     }
 }
 }
+
 .logo {
     display: block;
     display: flex;
@@ -88,5 +100,17 @@ display: none;
     flex-direction: row;
     gap: 24px;
 }
+.header--border {
+    width: calc(100% - 40px);
+    position: relative;
+    z-index: 100;
+    border-top: solid rgba(246, 245, 239, 0.2);
+    border-top-width: 1px ;
+    margin: 0 auto;
+    @media screen and (min-width: $tablet) {
+        width: calc(100% - 64px);
+    }
+}
+
 
 
